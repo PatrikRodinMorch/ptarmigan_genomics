@@ -6,6 +6,9 @@ import numpy as np
 import glob
 import os
 
+### Script to parse output files from vep to extract synonymous, missense, deleterious variants.
+### These are large files so using pandas in this way is not really the most efficient option, but it works!
+
 
 #%%
 def vep_summary(df):

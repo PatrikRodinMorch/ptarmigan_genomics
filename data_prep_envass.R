@@ -7,6 +7,8 @@ library(maps)
 library(mapdata)
 library(rstatix)
 
+# This script is used to donwload worldclim data, clean it and extract the data around our sampling points.
+
 # Reading in the coordinate data and clean up the species name column
 ptarm_coord <- read_csv("LatLong.csv") %>%
   mutate(Spp = str_replace(Spp, "Lagopus ", "L.")) %>%

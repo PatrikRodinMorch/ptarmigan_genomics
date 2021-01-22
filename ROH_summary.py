@@ -4,6 +4,8 @@ import pandas as pd
 import argparse
 import allel
 
+# Script to take command line input to summarize runs of homozygozity output from plink.
+
 parser = argparse.ArgumentParser(description = 'Script that returns annotations for ROHs and overlap between ROHs and vep mutation classes')
 parser.add_argument('-pop', type = str, help = 'The population under consideration', required = True)
 

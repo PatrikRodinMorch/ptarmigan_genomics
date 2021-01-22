@@ -2,6 +2,7 @@ library(vegan)
 library(lme4)
 library(car)
 library(performance)
+library(ResistanceGA)
 
 # Fitting Maximum‐likelihood population‐effects (MLPE) mixed models in lme4 using population identity comparisons as a random effect
 dat <- read.table("genotype_matrix.txt")
@@ -72,6 +73,8 @@ summary(IBE_IBR)
 Anova(IBE_IBR)
 r2(IBE_IBR)
 
+
+# testing which model fits my data the best using Akaike's information criterion.
 AIC(null, IBD, IBE, IBR, IBE_IBR, IBD_IBE, IBD_IBR)
 
 anova(IBD_IBE, IBD_IBR)

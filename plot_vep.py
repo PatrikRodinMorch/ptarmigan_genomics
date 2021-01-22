@@ -10,6 +10,8 @@ import scipy.stats as stats
 import statsmodels.stats.multicomp as mc
 
 
+# Script to visualize mutation load per population.
+
 #%%
 vep_table = pd.read_table('/home/prm/Desktop/Ptarmigan_analysis/vep_stuff/final/vep_summary_stats.txt', sep = ',')
 # %%

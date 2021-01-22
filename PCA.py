@@ -15,6 +15,9 @@ import bcolz
 import pandas
 import allel; print('scikit-allel', allel.__version__)
 
+# Script to visualize population structure using principal component analysis.
+
+
 # %%
 muta = allel.read_vcf('LL_SNPs_final_autosomes.recode.vcf', fields = '*')
 

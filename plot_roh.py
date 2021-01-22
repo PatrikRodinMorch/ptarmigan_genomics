@@ -4,16 +4,17 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-import statsmodels.api as sm
-from statsmodels.formula.api import ols
-import scipy.stats as stats
-import statsmodels.stats.multicomp as mc
+
+# Script to plot runs of homozygosity output from plink.
+
 
 #%%
 roh_table = pd.read_csv('/home/prm/Desktop/Ptarmigan_analysis/ROH/roh_table2.csv')
 # %%
 roh_table.head()
 # %%
+
+# getting genome size in to kb
 autosomal_genome_size_kb = 960796788/1000
 autosomal_genome_size_kb
 
