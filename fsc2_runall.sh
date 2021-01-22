@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+#### script to run 100 iteration of fastsimcoal to infer demographic history
+
 for i in {1..100}
 do 
 	n=1	
